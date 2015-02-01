@@ -3,79 +3,62 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Cotizaciones Médicas</title>
-	<link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
 	<link type="text/css" rel="stylesheet" href="materialize/css/style.css">
+	<link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
 	<link href='http://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet' type='text/css'>
 </head>
 <body>
   	<main>
 		<div class="container">
-	     <header class="s12 m12 l12">
-	     	<h2 id="logo"><i class="mdi-image-grain"></i>CotiMed</h2>
-	     </header>
-	      <h1 class="header center cyan-text">Cotizaciones Médicas</h1>
-	      <div class="row center">
-	        <h5 class="header col s12 m12 l12 light">Realiza todas las cotizaciones que necesites para tus pacientes</h5>
-	      </div>
-	      <div class="row center">
-	        <a href="#" id="download-button" class="btn-large waves-effect waves-light light-blue">Regístrate</a>
-	        <a href="#" id="download-button" class="btn-large waves-effect waves-light light-blue">Entrar</a>
-	      </div>
-	    </div>
-	    <div class="container">
-	    <div class="section">
-	      <div class="row">
-	        <div class="col s12 m4 l4">
-	          <div class="icon-block">
-	            <h2 class="center cyan-text"><i class="mdi-image-filter-1"></i></h2>
-	            <h5 class="center">Regístrate</h5>
+		     <header class="s12 m12 l12">
+		     	<h2 id="logo"><i class="mdi-image-grain"></i>CotiMed</h2>
+		     </header>
 
-	            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-	          </div>
-	        </div>
+	 	<!-- Form Login -->
+	 	<div class="row">
+        <div class="col s12 m6 l4 offset-l4">
+          <div class="card grey lighten-5 z-depth-1">
+            <!-- <div class="card-content"> -->
+            	<form class="col s12">
+					<div class="row">
+				      <div class="input-field col s12">
+				      	<i class="mdi-action-perm-identity prefix"></i>
+				        <input id="email" type="email" class="validate" placeholder ="Email">
+				      </div>
+		    		</div>
+		    		<div class="row">
+				      <div class="input-field col s12">
+				      	<i class="mdi-action-lock-outline prefix"></i>
+				        <input id="password" type="password" class="validate" placeholder ="Password">
+				      </div>
+		    		</div>
+            <!-- </div> -->
+		            <!-- <div class="card-action"> -->
+		            	<div class="col s12">
+		            		<div class="row">
+		            			<div class="col s6 offset-l6">	
+					              	<button class="btn waves-effect waves-light" type="submit" name="action">Entrar
+				    					<i class="mdi-content-send right"></i>
+				  					</button>
+				  				</div>	
+	  						</div>
+	  					</div>
+		            <!-- </div> -->
+            	</form>
+				<div class="row">
+					<div class="col s12 offset-s3">
+						<div class="row">
+						<a href="#">Recuperar la contraseña</a>
+					</div>
+				</div>
+          </div>
+        </div>
+      </div>
+	
 
-	        <div class="col s12 m4 l4">
-	          <div class="icon-block">
-	            <h2 class="center cyan-text"><i class="mdi-image-filter-2"></i></h2>
-	            <h5 class="center">Personaliza</h5>
-
-	            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-	          </div>
-	        </div>
-
-	        <div class="col s12 m4 l4">
-	          <div class="icon-block">
-	            <h2 class="center cyan-text"><i class="mdi-image-filter-3"></i></h2>
-	            <h5 class="center">Cotiza</h5>
-
-	            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-	          </div>
-	        </div>
-	      </div>
-	    </div>
-	  </div>
+	</div>      
   	</main>
-	<footer class="page-footer cyan">
-	    <div class="container">
-	      <div class="row">
-	        <div class="col l6 s12">
-	          <h5 class="white-text">Proyecto</h5>
-	          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-	        </div>
-	        <div class="col l6 s12">
-	          <h5 class="white-text">Redes Sociales</h5>
-	          <ul>
-	            <li><a class="white-text" href="#!">Link 1</a></li>
-	          </ul>
-	        </div>
-	      </div>
-	    </div>
-	    <div class="footer-copyright">
-	      <div class="container">
-	      Desarrollado por <a class="orange-text text-lighten-3" href="http://materializecss.com">Autores</a>
-	      </div>
-	    </div>
-  	</footer>
+	
 
 	<!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

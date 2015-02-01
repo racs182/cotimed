@@ -1,3 +1,10 @@
 body{
 	background-color: #EAEAEA;
 }
+
+#logo header, h2 { 
+	font-family:'Yellowtail', cursive; 
+	text-align: center;
+	color:#03a9f4;
+	font-size: 4.20rem;
+}

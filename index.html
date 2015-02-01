@@ -3,12 +3,197 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Cotizaciones Médicas</title>
-	<link rel="stylesheet" href="materialize/css/materialize.min.css">
-	<link rel="stylesheet" href="materialize/css/style.css">
+	<link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+	<link type="text/css" rel="stylesheet" href="materialize/css/style.css">
 </head>
 <body>
-	hola mundo
-</body>
+	<!-- Navbar goes here -->
 
-<script src="materialize/js/materialize.min.js"></script>
+    <!-- Page Layout here -->
+    <div class="row">
+
+      <div class="col s12 m4 l3"> <!-- Note that "m4 l3" was added -->
+        <!-- Grey navigation panel. This content will be: 3-columns-wide on large screens,4-columns-wide on medium screens,
+          12-columns-wide on small screens  -->
+		<ul id="nav-mobile" class="side-nav fixed">
+        <li class="logo"><a id="logo-container" href="#" class="brand-logo">
+        	<h3>CotiMed</h3>
+            <!-- <img src="http://lorempixel.com/114/56/people" alt=""></li> -->
+        <li class="bold"><a href="about.html">Inicio</a></li>
+        <li class="bold"><a href="getting-started.html">Presupuesto</a></li>
+        <li class="no-padding">
+          <ul class="collapsible collapsible-accordion">
+            <li class="bold"><a class="collapsible-header">Perfil</a>
+              <div class="collapsible-body" style="">
+                <ul>
+                  <li><a href="color.html">Color</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="bold"><a class="collapsible-header">Components</a>
+              <div class="collapsible-body" style="">
+                <ul>
+                  <li><a href="badges.html">Badges</a></li>
+                  <li><a href="buttons.html">Buttons</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="bold active"><a class="collapsible-header active">JavaScript</a>
+              <div class="collapsible-body" style="display: block;">
+                <ul>
+                  <li><a href="collapsible.html">Collapsible</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class="bold"><a href="http://materializecss.com/mobile.html">Mobile</a></li>
+        <li class="bold"><a href="showcase.html">Showcase</a></li>
+      </ul>
+		
+
+
+      </div>
+	<main>
+		<div class="container">
+		      <div class="col s12 m8 l9"> <!-- Note that "m8 l9" was added -->
+		        <!-- Teal page content. This content will be: 9-columns-wide on large screens, 8-columns-wide on medium screens,
+		          12-columns-wide on small screens  -->
+				
+				<!-- Header Cotización -->
+					<div class="card-panel">
+					          <div class="row valign-wrapper">
+					            <div class="col s2">
+					              <img src="http://lorempixel.com/300/300/sports" alt="" class="circle responsive-img"> 
+					              <!-- notice the "circle" class -->
+					            </div>
+					            <div class="col s10">
+					            	<h5>Consultorio Médico ABC,C.A</h5>
+					            	<div class="row">
+					            		<div class="col s12">
+					            			<div class="row">
+					            				<div class="col s4"><label>Dr./Dra.: </label><br/><span>Pedro Pérez</span></div>
+					            				<div class="col s8"><label>Dirección: </label><br/><span>Av. La estancia Torre las Mercedes, Piso 6 Ofic 603 Chuao, Miranda, Venezuela.</span></div>
+					            			</div>
+					            		</div>
+					            		<div class="col s12">
+					            			<div class="row">
+					            				<div class="col s4"><label>Telf.: </label><br/><span>0212-3336655 / 0212-3337788</span></div>
+					            				<div class="col s4"><label>Email: </label><span>nombre.apellido@gmail.com</span></div>
+					            				<div class="col s4"><label>Rif.: </label><br/><span>J-12345678-9</span></div>
+
+					            			</div>
+					            		</div>
+					            	</div>
+					            </div>
+					          </div>
+					</div>
+				<!-- Fin Header Cotización -->
+				
+				<!-- Form Paciente -->
+				<div class="row">
+				  <form class="col s12">
+				  	<h6>Datos del Paciente</h6>
+				    <div class="row">
+				      <div class="input-field col s4">
+				        <input id="ci" type="text" class="validate" placeholder="C.I/Rif:">
+				        <!-- <label for="ci">C.I/Rif</label> -->
+				      </div>
+				      <div class="input-field col s4">
+				        <input id="first_name" type="text" class="validate" placeholder="Nombre">
+				        <!-- <label for="first_name">Nombre</label> -->
+				      </div>
+				      <div class="input-field col s4">
+				        <input id="last_name" type="text" class="validate" placeholder="Apellido">
+				        <!-- <label for="last_name">Apellido</label> -->
+				      </div>
+				    </div>
+				    <div class="row">
+				      <div class="input-field col s12">
+				        <input id="direccion" type="text" class="validate" placeholder="Dirección">
+				        <!-- <label for="direccion">Dirección</label> -->
+				      </div>
+				    </div>
+				    <div class="row">
+				    	<div class="col-s12">
+				      <div class="input-field col s6">
+				        <input id="telf" type="text" class="validate" placeholder="Telf.">
+				        <!-- <label for="telf">Telf.</label> -->
+				      </div>
+				    </div>
+				      <div class="input-field col s6">
+				        <input id="email" type="email" class="validate" placeholder="Email">
+				        <!-- <label for="email">Email</label> -->
+				      </div>
+				      </div>
+				  </form>
+				</div>
+				<!-- Fin Form Paciente -->
+				
+				<!-- Formulario Cotizacion tratamiento -->
+				<div class="row">
+				  <form class="col s12">
+				  	<h6>Tratamiento</h6>
+				  	<table class="striped">
+				        <thead>
+				          <tr>
+				              <th data-field="id">Name</th>
+				              <th data-field="name">Item Name</th>
+				              <th data-field="price">Item Price</th>
+				          </tr>
+				        </thead>
+				    </table>
+				    <div class="row">
+				      <div class="input-field col s4">
+				        <input id="ci" type="text" class="validate" placeholder="C.I/Rif:">
+				        <!-- <label for="ci">C.I/Rif</label> -->
+				      </div>
+				      <div class="input-field col s4">
+				        <input id="first_name" type="text" class="validate" placeholder="Nombre">
+				        <!-- <label for="first_name">Nombre</label> -->
+				      </div>
+				      <div class="input-field col s4">
+				        <input id="last_name" type="text" class="validate" placeholder="Apellido">
+				        <!-- <label for="last_name">Apellido</label> -->
+				      </div>
+				    </div>
+				    <div class="row">
+				      <div class="input-field col s12">
+				        <input id="direccion" type="text" class="validate" placeholder="Dirección">
+				        <!-- <label for="direccion">Dirección</label> -->
+				      </div>
+				    </div>
+				    <div class="row">
+				    	<div class="col-s12">
+				      <div class="input-field col s6">
+				        <input id="telf" type="text" class="validate" placeholder="Telf.">
+				        <!-- <label for="telf">Telf.</label> -->
+				      </div>
+				    </div>
+				      <div class="input-field col s6">
+				        <input id="email" type="email" class="validate" placeholder="Email">
+				        <!-- <label for="email">Email</label> -->
+				      </div>
+				      </div>
+				  </form>
+				</div>
+
+
+
+		      
+
+		      </div>
+    	</div>
+    </div>
+  	</main>
+
+
+
+	
+	<!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      
+      
+</body>
 </html>

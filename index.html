@@ -90,7 +90,7 @@
 					</div>
 				<!-- Fin Header Cotización -->
 				
-				<!-- Form Paciente -->
+				<!-- Form Paciente y Cotizacion -->
 				<div class="row">
 				  <form class="col s12">
 				  	<h6>Datos del Paciente</h6>
@@ -126,56 +126,59 @@
 				        <!-- <label for="email">Email</label> -->
 				      </div>
 				      </div>
-				  </form>
+				  
 				</div>
-				<!-- Fin Form Paciente -->
+				<!-- Fin Campos Paciente -->
 				
-				<!-- Formulario Cotizacion tratamiento -->
+				<!-- Table-Header Cotizacion tratamiento -->
 				<div class="row">
-				  <form class="col s12">
+				  <div class="col s12">
 				  	<h6>Tratamiento</h6>
 				  	<table class="striped">
 				        <thead>
 				          <tr>
-				              <th data-field="id">Name</th>
-				              <th data-field="name">Item Name</th>
-				              <th data-field="price">Item Price</th>
+				              <th class="col s2" data-field="id">Cod</th>
+				              <th class="col s6"data-field="tratamiento">Descripción</th>
+				              <th class="col s2" data-field="cantidad">Cantidad</th>
+				              <th class="col s2" data-field="precio">Precio</th>
 				          </tr>
 				        </thead>
 				    </table>
-				    <div class="row">
-				      <div class="input-field col s4">
-				        <input id="ci" type="text" class="validate" placeholder="C.I/Rif:">
-				        <!-- <label for="ci">C.I/Rif</label> -->
-				      </div>
-				      <div class="input-field col s4">
-				        <input id="first_name" type="text" class="validate" placeholder="Nombre">
-				        <!-- <label for="first_name">Nombre</label> -->
-				      </div>
-				      <div class="input-field col s4">
-				        <input id="last_name" type="text" class="validate" placeholder="Apellido">
-				        <!-- <label for="last_name">Apellido</label> -->
-				      </div>
-				    </div>
-				    <div class="row">
-				      <div class="input-field col s12">
-				        <input id="direccion" type="text" class="validate" placeholder="Dirección">
-				        <!-- <label for="direccion">Dirección</label> -->
-				      </div>
-				    </div>
-				    <div class="row">
-				    	<div class="col-s12">
-				      <div class="input-field col s6">
-				        <input id="telf" type="text" class="validate" placeholder="Telf.">
-				        <!-- <label for="telf">Telf.</label> -->
-				      </div>
-				    </div>
-				      <div class="input-field col s6">
-				        <input id="email" type="email" class="validate" placeholder="Email">
-				        <!-- <label for="email">Email</label> -->
-				      </div>
-				      </div>
-				  </form>
+				    <!-- Fin Table-Header Cotización tratamiento -->
+				    <!-- Campos cotizacion -->
+					<div class="row">
+						<div class="col s12">
+							<div class="row">
+								<div class="col s2">
+									  <select class="browser-default">
+									    <option value="" disabled selected>Seleccionar</option>
+									    <option value="1">Option 1</option>
+									    <option value="2">Option 2</option>
+									    <option value="3">Option 3</option>
+									  </select>
+								</div>
+
+								<div class="col s6">
+									<select class="browser-default">
+									    <option value="" disabled selected>Seleccionar</option>
+									    <option value="1">Lorem ipsum lorem ipsum jjgn a1</option>
+									    <option value="2">Option 2222 222 22 222233333</option>
+									    <option value="3">Option 5555 55556yy 66666 8888</option>
+									  </select>
+								</div>
+								<div class="col s2">
+									<input id="cant" type="text" class="validate">
+								</div>
+
+								<div class="col s2">
+									<input id="precio" type="text" class="validate">
+								</div>
+							</div>
+						</div>
+					</div>
+					</form> <!-- Fin Form Cotización tratamiento -->
+
+				    
 				</div>
 
 

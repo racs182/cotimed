@@ -36,8 +36,8 @@
 		            <!-- <div class="card-action"> -->
 		            	<div class="col s12">
 		            		<div class="row">
-		            			<div class="col s6 offset-l6">	
-					              	<button class="btn waves-effect waves-light" type="submit" name="action">Entrar
+		            			<div class="col s6 offset-l6">
+					              	<button class="btn waves-effect waves-light light-blue" type="submit" name="action">Entrar
 				    					<i class="mdi-content-send right"></i>
 				  					</button>
 				  				</div>	
@@ -45,12 +45,23 @@
 	  					</div>
 		            <!-- </div> -->
             	</form>
-				<div class="row">
-					<div class="col s12 offset-s3">
-						<div class="row">
-						<a href="#">Recuperar la contraseña</a>
-					</div>
 				</div>
+				<div class="row">
+					<div class="col s12 offset-s6">
+						<div class="row">
+						<a class="modal-trigger" href="#modal1">Recuperar contraseña</a>
+					</div>  
+				  <!-- Modal Structure -->
+				  <div id="modal1" class="modal">
+				    <h4>Modal Header</h4>
+				    <p>A bunch of text</p>
+				    <div class="action-bar">
+				      <a href="#" class="waves-effect waves-green btn-flat modal-action modal-close">Agree</a>
+				    </div>
+				  </div>
+
+
+				
           </div>
         </div>
       </div>
@@ -63,7 +74,15 @@
 	<!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
-      
+      <script>
+      	$(document).ready(function(){
+    	// the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+    	$('.modal-trigger').leanModal();
+    	$('#modal1').openModal();
+    	$('#modal1').closeModal();
+  		});
+
+      </script>
       
 </body>
 </html>

@@ -6,22 +6,7 @@
 	<link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
 	<link type="text/css" rel="stylesheet" href="materialize/css/style.css">
 
-	<script>
-       		$(document).ready(function(){
-		// the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-			$('.modal-trigger').leanModal();
-		});
-       </script>
-       <script>
-			$(document).ready(function(){
-			    $('#modal1').openModal();
-			  });
-       </script>
-       <script>
-       	$(document).ready(function(){
-    	$('#modal1').closeModal();
-  		});
-       </script>
+	
 </head>
 <body>
 	<!-- Navbar goes here -->
@@ -37,8 +22,9 @@
         	<h3>CotiMed</h3>
             <!-- <img src="http://lorempixel.com/114/56/people" alt=""></li> -->
         <!-- <li class="bold"><a href="#">Inicio</a></li> -->
+        <li class="bold"><a href="index.html">Inicio</a></li>
         <li class="bold"><a href="nueva-cotizacion.html">Nueva Cotización</a></li>
-        <li class="bold"><a href="#">Configuración</a></li>
+        <li class="bold"><a href="configuracion-perfil.html">Configuración</a></li>
         <li class="bold"><a href="#">Lista de Cotizaciones</a></li>
         <li class="bold"><a href="#">Salir</a></li>
       </ul>
@@ -69,7 +55,7 @@
 									    <h4>Modal Header</h4>
 									    <p>A bunch of text</p>
 									    <div class="action-bar">
-									      <a href="#" class="waves-effect waves-green btn-flat modal-action modal-close">Agree</a>
+									      <a href="#modal1" class="waves-effect waves-green btn-flat modal-action modal-close">Agree</a>
 									    </div>
 									  </div>
 
@@ -189,6 +175,21 @@
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
        
-      
+      <script>
+       		$(document).ready(function(){
+		// the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+			$('.modal-trigger').leanModal();
+		});
+       </script>
+       <script>
+			$(document).ready(function(){
+			    $('#modal1').openModal();
+			  });
+       </script>
+       <script>
+       	$(document).ready(function(){
+    	$('#modal1').closeModal();
+  		});
+       </script>
 </body>
 </html>

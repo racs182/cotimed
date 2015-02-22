@@ -34,304 +34,51 @@
 		      <div class="col s12 m8 l9"> <!-- Note that "m8 l9" was added -->
 		        <!-- Teal page content. This content will be: 9-columns-wide on large screens, 8-columns-wide on medium screens,
 		          12-columns-wide on small screens  -->
+		          <h5>Listado de cotizaciones emitidas</h5>
+
+		           <table class="striped">
+				        <thead>
+				          <tr>
+				              <th data-field="id">Paciente</th>
+				              <th data-field="name">Fecha</th>
+				              <th data-field="price">Total Cotización</th>
+				          </tr>
+				        </thead>
+
+				        <tbody>
+				          <tr>
+				          	<td><a href="#">José Martínez</a></td>
+				            <td>25-03-2015</td>
+				            <td>Bs.25.500</td>
+				          </tr>
+				          <tr>
+				            <td><a href="#">Alan Doe</a></td>
+				            <td>02-04-2015</td>
+				            <td>Bs.125.300</td>
+				          </tr>
+				          <tr>
+				            <td><a href="#">María Rodríguez</a></td>
+				            <td>19-05-2015</td>
+				            <td>Bs.67.000</td>
+				          </tr>
+				          <tr>
+				          	<td><a href="#">Luis Guerra</a></td>
+				            <td>22-06-2015</td>
+				            <td>Bs.22.500</td>
+				          </tr>
+				          <tr>
+				            <td><a href="#">Luisa Salazar</a></td>
+				            <td>03-07-2015</td>
+				            <td>Bs.165.300</td>
+				          </tr>
+				          <tr>
+				            <td><a href="#">Abril Jacket</a></td>
+				            <td>17-07-2015</td>
+				            <td>Bs.87.000</td>
+				          </tr>
+				        </tbody>
+				      </table>
 				
-				<!-- Header Cotización -->
-					<div class="card-panel">
-					          <div class="row valign-wrapper">
-					            <div class="col s2">
-					              <img src="http://lorempixel.com/300/300/sports" alt="" class="circle responsive-img"> 
-					              <!-- notice the "circle" class -->
-					            </div>
-					            <div class="col s10">
-					            	<div class="row">
-					            		<div class="col s12">
-					            			<div class="row">
-					            				<div class="col s10">
-					            					<h5>Consultorio Médico ABC,C.A</h5>						            			
-					            				</div>
-					            				<div class="col s2">
-					            					<label>Fecha:</label><br/><span>31/12/2015</span>
-					            				</div>
-					            			</div>
-					            		</div>
-					            	</div>
-
-					            	<div class="row">
-					            		<div class="col s12">
-					            			<div class="row">
-					            				<div class="col s4"><label>Dr./Dra.: </label><br/><span>Pedro Pérez</span></div>
-					            				<div class="col s8"><label>Dirección: </label><br/><span>Av. La estancia Torre las Mercedes, Piso 6 Ofic 603 Chuao, Miranda, Venezuela.</span></div>
-					            			</div>
-					            		</div>
-					            		<div class="col s12">
-					            			<div class="row">
-					            				<div class="col s4"><label>Telf.: </label><br/><span>0212-3336655 / 0212-3337788</span></div>
-					            				<div class="col s4"><label>Email: </label><span>nombre.apellido@gmail.com</span></div>
-					            				<div class="col s4"><label>Rif.: </label><br/><span>J-12345678-9</span></div>
-
-					            			</div>
-					            		</div>
-					            	</div>
-					            </div>
-					          </div>
-					</div>
-				<!-- Fin Header Cotización -->
-				
-				<!-- Form Paciente y Cotizacion -->
-				<div class="row">
-				  <form class="col s12">
-				  	<blockquote>
-				      Datos del Paciente
-				    </blockquote>
-				    <div class="row">
-				      <div class="input-field col s4">
-				        <input id="ci" type="text" class="validate" placeholder="C.I/Rif:">
-				        <!-- <label for="ci">C.I/Rif</label> -->
-				      </div>
-				      <div class="input-field col s4">
-				        <input id="first_name" type="text" class="validate" placeholder="Nombre">
-				        <!-- <label for="first_name">Nombre</label> -->
-				      </div>
-				      <div class="input-field col s4">
-				        <input id="last_name" type="text" class="validate" placeholder="Apellido">
-				        <!-- <label for="last_name">Apellido</label> -->
-				      </div>
-				    </div>
-				    <div class="row">
-				      <div class="input-field col s12">
-				        <input id="direccion" type="text" class="validate" placeholder="Dirección">
-				        <!-- <label for="direccion">Dirección</label> -->
-				      </div>
-				    </div>
-				    <div class="row">
-				    	<div class="col-s12">
-				      <div class="input-field col s6">
-				        <input id="telf" type="text" class="validate" placeholder="Telf.">
-				        <!-- <label for="telf">Telf.</label> -->
-				      </div>
-				    </div>
-				      <div class="input-field col s6">
-				        <input id="email" type="email" class="validate" placeholder="Email">
-				        <!-- <label for="email">Email</label> -->
-				      </div>
-				      </div>
-				  
-				</div>
-				<!-- Fin Campos Paciente -->
-				
-				<!-- Table-Header Cotizacion tratamiento -->
-				<div class="row">
-				  <div class="col s12">
-				  	<blockquote>
-				      Tratamiento a cotizar
-				    </blockquote>
-				  	<div class="row">
-					  	<table class="striped">
-					        <thead>
-					          <tr>
-					              <th class="col s2" data-field="id">Cod</th>
-					              <th class="col s6"data-field="tratamiento">Descripción</th>
-					              <th class="col s2" data-field="cantidad">Cantidad</th>
-					              <th class="col s2" data-field="precio">Precio</th>
-					          </tr>
-					        </thead>
-					    </table>
-				    </div>
-				    <!-- Fin Table-Header Cotización tratamiento -->
-				    <!-- Campos cotizacion -->
-				    <!-- Linea 1 -->
-					<div class="row">
-						<div class="col s12">
-							<div class="row">
-								<div class="col s2">
-									  <select class="browser-default">
-									    <option value="" disabled selected>Seleccionar</option>
-									    <option value="cod-opt1-linea1">Option 1</option>
-									    <option value="cod-opt2-linea1">Option 2</option>
-									    <option value="cod-opt3-linea1">Option 3</option>
-									  </select>
-								</div>
-
-								<div class="col s6">
-									<select class="browser-default">
-									    <option value="" disabled selected>Seleccionar</option>
-									    <option value="des-opt1-linea1">Lorem ipsum lorem ipsum jjgn a1</option>
-									    <option value="des-opt2-linea1">Option 2222 222 22 222233333</option>
-									    <option value="des-opt3-linea1">Option 5555 55556yy 66666 8888</option>
-									  </select>
-								</div>
-								<div class="col s2">
-									<input id="cant-linea1" type="text" class="validate">
-								</div>
-
-								<div class="col s2">
-									<input id="precio-linea1" type="text" class="validate">
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- Fin Linea 1 -->
-					<!-- Linea 2 -->
-					<div class="row">
-						<div class="col s12">
-							<div class="row">
-								<div class="col s2">
-									  <select class="browser-default">
-									    <option value="" disabled selected>Seleccionar</option>
-									    <option value="cod-opt1-linea2">Option 1</option>
-									    <option value="cod-opt2-linea2">Option 2</option>
-									    <option value="cod-opt3-linea2">Option 3</option>
-									  </select>
-								</div>
-
-								<div class="col s6">
-									<select class="browser-default">
-									    <option value="" disabled selected>Seleccionar</option>
-									    <option value="des-opt1-linea2">Lorem ipsum lorem ipsum jjgn a1</option>
-									    <option value="des-opt2-linea2">Option 2222 222 22 222233333</option>
-									    <option value="des-opt3-linea2">Option 5555 55556yy 66666 8888</option>
-									  </select>
-								</div>
-								<div class="col s2">
-									<input id="cant-linea2" type="text" class="validate">
-								</div>
-
-								<div class="col s2">
-									<input id="precio-linea2" type="text" class="validate">
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- Fin Linea 2 -->
-					<!-- Linea3 -->
-					<div class="row">
-						<div class="col s12">
-							<div class="row">
-								<div class="col s2">
-									  <select class="browser-default">
-									    <option value="" disabled selected>Seleccionar</option>
-									    <option value="cod-opt1-linea3">Option 1</option>
-									    <option value="cod-opt2-linea3">Option 2</option>
-									    <option value="cod-opt3-linea3">Option 3</option>
-									  </select>
-								</div>
-
-								<div class="col s6">
-									<select class="browser-default">
-									    <option value="" disabled selected>Seleccionar</option>
-									    <option value="des-opt1-linea3">Lorem ipsum lorem ipsum jjgn a1</option>
-									    <option value="des-opt2-linea3">Option 2222 222 22 222233333</option>
-									    <option value="des-opt3-linea3">Option 5555 55556yy 66666 8888</option>
-									  </select>
-								</div>
-								<div class="col s2">
-									<input id="cant-linea3" type="text" class="validate">
-								</div>
-
-								<div class="col s2">
-									<input id="precio-linea3" type="text" class="validate">
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- Fin Linea 3 -->
-					<!-- Linea 4 -->
-					<div class="row">
-						<div class="col s12">
-							<div class="row">
-								<div class="col s2">
-									  <select class="browser-default">
-									    <option value="" disabled selected>Seleccionar</option>
-									    <option value="cod-opt1-linea4">Option 1</option>
-									    <option value="cod-opt2-linea4">Option 2</option>
-									    <option value="cod-opt3-linea4">Option 3</option>
-									  </select>
-								</div>
-
-								<div class="col s6">
-									<select class="browser-default">
-									    <option value="" disabled selected>Seleccionar</option>
-									    <option value="des-opt1-linea4">Lorem ipsum lorem ipsum jjgn a1</option>
-									    <option value="des-opt2-linea4">Option 2222 222 22 222233333</option>
-									    <option value="des-opt3-linea4">Option 5555 55556yy 66666 8888</option>
-									  </select>
-								</div>
-								<div class="col s2">
-									<input id="cant-linea4" type="text" class="validate">
-								</div>
-
-								<div class="col s2">
-									<input id="precio-linea4" type="text" class="validate">
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- Fin Linea 4 -->
-					<!-- Linea 5 -->
-					<div class="row">
-						<div class="col s12">
-							<div class="row">
-								<div class="col s2">
-									  <select class="browser-default">
-									    <option value="" disabled selected>Seleccionar</option>
-									    <option value="cod-opt1-linea5">Option 1</option>
-									    <option value="cod-opt2-linea5">Option 2</option>
-									    <option value="cod-opt3-linea5">Option 3</option>
-									  </select>
-								</div>
-
-								<div class="col s6">
-									<select class="browser-default">
-									    <option value="" disabled selected>Seleccionar</option>
-									    <option value="des-opt1-linea5">Lorem ipsum lorem ipsum jjgn a1</option>
-									    <option value="des-opt2-linea5">Option 2222 222 22 222233333</option>
-									    <option value="des-opt3-linea5">Option 5555 55556yy 66666 8888</option>
-									  </select>
-								</div>
-								<div class="col s2">
-									<input id="cant-linea5" type="text" class="validate">
-								</div>
-
-								<div class="col s2">
-									<input id="precio-linea5" type="text" class="validate">
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- Fin Linea 5 -->
-					<!-- Campos Calculados -->
-					<div class="row">
-						<div class="col s12">
-      						<div class="col s3 offset-s9"><caption>Sub-total: </caption><span class="flow-text">000.000,00</span></div>
-      					</div>
-    				</div>
-    				<div class="row">
-						<div class="col s12">
-      						<div class="col s3 offset-s9"><caption>IVA (12%): </caption><span class="flow-text">00.000,00</span></div>
-      					</div>
-    				</div>
-    				<div class="row">
-						<div class="col s12">
-      						<div class="col s3 offset-s9"><caption>Total Pagar:</caption><span class="flow-text">000.000,00</span></div>
-      					</div>
-    				</div><!-- Fin Campos Calculados -->
-          			<!-- Divider -->
-          			<div class="row">
-          			<div class="divider"></div>
-          			</div>
-          			<!-- Fin Divider -->
-          			<!-- Boton de Envio -->
-          			<div class="row">
-          				<div class="col s12">
-          					<div class="col s3 offset-s9">
-	          					<button class="btn waves-effect waves-light btn-large" type="submit" name="action">Enviar
-	    							<i class="mdi-content-send right"></i>
-	  							</button>
-  							</div>
-          				</div>
-          			</div><!-- Boton de Envio -->
-					</form> <!-- Fin Form Cotización tratamiento -->
-
 				</div>
 		      </div>
     	</div>
